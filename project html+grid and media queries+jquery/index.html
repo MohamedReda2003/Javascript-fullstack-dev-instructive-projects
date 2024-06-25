@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Blog Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Responsive Blog Layout</h1>
+    </header>
+    <main>
+        <div class="grid-container">
+            <div class="grid-item" data-post="1">
+                <h2>Blog Post 1</h2>
+                <p class="summary">This is a summary of the first blog post.</p>
+                <div class="details" style="display: none;">
+                    <p>Details of the first blog post...</p>
+                </div>
+            </div>
+            <div class="grid-item" data-post="2">
+                <h2>Blog Post 2</h2>
+                <p class="summary">This is a summary of the second blog post.</p>
+                <div class="details" style="display: none;">
+                    <p>Details of the second blog post...</p>
+                </div>
+            </div>
+            <!-- Add more grid items as needed -->
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
