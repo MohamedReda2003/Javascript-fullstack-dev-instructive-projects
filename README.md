@@ -33,6 +33,7 @@ Here we will see how to set up the project folder so that you can run it on your
 You can name it whatever you prefer, for example: "Project"
 ### 2.Create two folders inside "Project":
 the first folder is named "client", the second one is named "server"
+
 ![created folders](https://github.com/MohamedReda2003/Javascript-fullstack-dev-instructive-projects/assets/61638355/7449984f-d388-48a1-af34-8eec0a7063ee)
 ### 3.Set up the server:
 Open your terminal, navigate to the server folder we have created recently, then run the following commands:
