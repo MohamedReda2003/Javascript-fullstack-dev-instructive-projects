@@ -58,7 +58,7 @@ npx create-react-app .
 after running the command and accessing the folder, you must find a file called "package.json" where you will add a proxy definition line as below:
 ![package.json Screenshot before changes](https://github.com/MohamedReda2003/Javascript-fullstack-dev-instructive-projects/assets/61638355/09ef01fd-fa90-4fde-9cb3-a76ea267373a)
 
-![package.json Screenshot after changes](https://github.com/MohamedReda2003/Javascript-fullstack-dev-instructive-projects/assets/61638355/8f5589b8-7064-49aa-8cef-27cfe03423f0)
+![package.json Screenshot after changes](https://github.com/MohamedReda2003/Javascript-fullstack-dev-instructive-projects/assets/61638355/908024fd-53d7-46cc-a0c0-8dca990f370f)
 *Try keeping the same port between the server.js and this package.json proxy
 ### 5.Let's set up all the project!
 Now, head to the project in the repository that you want to work on, search for the "server.js" file, then go to the client folder, and open the "public" folder inside the GitHub project, download the file "index.html" and "styles.css" if found to the "public" folder inside the "client" folder in your project, then download all the JavaScript files in the GitHub project to the "src" folder that can be found in the "client" folder.
