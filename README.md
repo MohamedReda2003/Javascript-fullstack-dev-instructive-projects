@@ -43,7 +43,7 @@ npm i nodemon -D
 ```
 After running these command, you will find a new file created inside the server folder, named "package.json"
 
-![package.json Screenshot before changes](https://drive.google.com/file/d/11Nq85clFZRecZcpUr-w2JPjq4Gea3J6y/view?usp=drive_link)
+![package.json Screenshot before changes](file:///C:/Users/User/Downloads/before.png)
 
 then you must apply some changes on this file like below:
 ![package.json Screenshot after changes](https://drive.google.com/file/d/11XEkTUw_ZqH_nLU3pj5ALck6B7nmV3zW/view?usp=drive_link)
