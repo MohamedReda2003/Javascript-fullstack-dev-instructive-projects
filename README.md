@@ -33,7 +33,7 @@ Here we will see how to set up the project folder so that you can run it on your
 You can name it whatever you prefer, for example: "Project"
 ### 2.Create two folders inside "Project":
 the first folder is named "client", the second one is named "server"
-![created folders](https://drive.google.com/file/d/1fa9zkoa497T_pZuSmltiFX_TgETE1ATF/view?usp=drive_link)
+![created folders](https://github.com/MohamedReda2003/Javascript-fullstack-dev-instructive-projects/assets/61638355/7449984f-d388-48a1-af34-8eec0a7063ee)
 ### 3.Set up the server:
 Open your terminal, navigate to the server folder we have created recently, then run the following commands:
 ```
@@ -43,10 +43,10 @@ npm i nodemon -D
 ```
 After running these command, you will find a new file created inside the server folder, named "package.json"
 
-![package.json Screenshot before changes](https://drive.google.com/file/d/11Nq85clFZRecZcpUr-w2JPjq4Gea3J6y/view?usp=drive_link)
+![package.json Screenshot before changes](https://github.com/MohamedReda2003/Javascript-fullstack-dev-instructive-projects/assets/61638355/250b840f-bb0c-4e08-82a0-8e0cf0c39c43)
 
 then you must apply some changes on this file like below:
-![package.json Screenshot after changes](https://drive.google.com/file/d/11XEkTUw_ZqH_nLU3pj5ALck6B7nmV3zW/view?usp=drive_link)
+![package.json Screenshot after changes](https://github.com/MohamedReda2003/Javascript-fullstack-dev-instructive-projects/assets/61638355/707b7def-0bef-48dc-9d24-d8c37e55cfbe)
 
 *Try keeping the same port between the server.js and this package.json proxy
 ### 4.Set up the client folder:
@@ -55,9 +55,9 @@ Now navigate to the client folder, and run the following command:
 npx create-react-app .
 ```
 after running the command and accessing the folder, you must find a file called "package.json" where you will add a proxy definition line as below:
-![package.json Screenshot before changes](https://drive.google.com/file/d/10npIGBso2D9fa90yDSoTswqrW2KWrNjD/view?usp=drive_link)
+![package.json Screenshot before changes](https://github.com/MohamedReda2003/Javascript-fullstack-dev-instructive-projects/assets/61638355/09ef01fd-fa90-4fde-9cb3-a76ea267373a)
 
-![package.json Screenshot after changes](https://drive.google.com/file/d/1qHvZTWgoPHH01us9bGjACiTFihwajVAS/view?usp=drive_link)
+![package.json Screenshot after changes](https://github.com/MohamedReda2003/Javascript-fullstack-dev-instructive-projects/assets/61638355/8f5589b8-7064-49aa-8cef-27cfe03423f0)
 ### 5.Let's set up all the project!
 Now, head to the project in the repository that you want to work on, search for the "server.js" file, then go to the client folder, and open the "public" folder inside the GitHub project, download the file "index.html" and "styles.css" if found to the "public" folder inside the "client" folder in your project, then download all the JavaScript files in the GitHub project to the "src" folder that can be found in the "client" folder.
 ### 6.Run the server
