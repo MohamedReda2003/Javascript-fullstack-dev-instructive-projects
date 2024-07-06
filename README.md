@@ -24,7 +24,7 @@ This repository contains a collection of twelve beginner and intermediate-level 
   Build robust backend services with this minimalist web framework for Node.js.
 
 
-## About the projects containing "React.js"
+## About the projects containing "Express.js+React.js"
   While surfing the presented projects, you will find some of them about "react.js" and "express.js". 
 Here we will see how to set up the project folder so that you can run it on your machine.
 (The following commands are for Windows users, you might find some minor changes in other systems).
