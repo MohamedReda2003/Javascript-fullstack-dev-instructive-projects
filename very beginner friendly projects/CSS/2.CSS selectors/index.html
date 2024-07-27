@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>CSS selectors example</title>
+    </head>
+    <body>
+
+        <h1>CSS Example - The selector used here is simply the h1 tag</h1>
+        <p>CSS selectors are used to "find" (or select) the HTML elements you want to style, for example the next sentence line after the line will be different from the one you are reading now because I will add a "class" attribute to it that will help me distinguish it from other elements in the styling</p>
+        <hr />
+        <p class="short-text">This is the line I was talking about, you see the difference in the styling</p><hr />
+        <p id="new">For this line, we used the "id" attribute to select the element, you can take  a look to the CSS file to know how to get the element</p>
+        <hr />
+        <p id="new" class="short-text">This one combines the attributes of the two previous ones, but gives the advantage to the styles related to the "id" selector if we encounter the same attribute with different values. As we see, it took the font-size and the color from the id attributes, but kept the font-family from the "class" attribute</p>
+        <hr />
+        <p>We have also the Universal selector, that you will find in the CSS file as *, the attributes defined here will be applied on all the elements in the HTML page, except for the selectors that are more specified with different styles, for example, about the color, you will see that the first paragraph and this one are the only ones that were affected by the color attribute inside the universal selector, whereas the other elements that have their own color value keep it with no change in it.</p>
+    </body>
+</html>

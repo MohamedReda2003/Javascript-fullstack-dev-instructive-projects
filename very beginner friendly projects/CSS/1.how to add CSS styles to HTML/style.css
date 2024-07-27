@@ -1,0 +1,18 @@
+div.container {
+    text-align: center;
+    font-size: larger;
+  }
+  
+  ul.my_list {
+    display: inline-block;
+    text-align: left;
+    margin: 5px;
+  }
+  ul>li{
+    margin-top: 10px;
+    margin-bottom:20px;
+  }
+  ul>p{
+    background-color: aliceblue;
+    font-family: serif;
+  }

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>        
+        <style>
+        body {
+        background-color: lightblue;
+        }
+
+        h1 {
+        color: white;
+        text-align: center;
+        }
+
+        p {
+        font-family: verdana;
+        font-size: 20px;
+        }
+        </style>
+        <title>How to add CSS styles to the HTML page?</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1> This h1 tag is styled with outline CSS</h1>
+        <div class="container">
+            <ul class="my_list">
+                <h2>There are three ways to implement CSS styles to our HTML page:</h2>
+                <li><b>Inline CSS</b>: An internal style sheet may be used if one single HTML page has a unique style. The internal style is defined inside the "style" tag element, inside the head section.</li>
+                <li><b>Outline CSS</b>: An inline style may be used to apply a unique style for a single element. To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.</li>
+                <li><b>External CSS</b>: you can change the look of an entire website by changing just one file. You have just to include a reference to the external style sheet file inside the "link" tag element, inside the head section.</li>
+                <p>This whole div element, containing the h2, the list and this line elements, is styled with External CSS, see the style.css file</p>
+            </ul>
+        </div>
+        
+        <p style="color: darkgreen;background-color: tan;font-family: Arial, Helvetica, sans-serif;margin: 50px;">This is a paragraph styled with Inline CSS. I hope the examples were useful for your journey!</p>
+
+    </body>
+</html>

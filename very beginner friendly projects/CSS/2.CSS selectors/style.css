@@ -1,0 +1,26 @@
+body {
+    background-color: lightblue;
+    }
+
+    h1 {
+    color: white;
+    text-align: center;
+    }
+
+    p {
+    font-family: verdana;
+    font-size: 20px;
+    }
+    .short-text{
+        font-size: 30px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: chocolate;
+    }
+    #new{
+        font-size: 40px;
+        color:crimson;
+    }
+*{
+    text-align: center;
+    color: blue;
+}
