@@ -5,7 +5,7 @@ document.getElementById("demo").innerHTML = `${greeting_with_ternary_operator} w
 
 // to create a new element to the page, for example, we have this h1 element
 const heading = document.createElement("h1");
-heading.innerText = "This is a new page title made from the JS script";
+heading.innerText = "This is a new page title made by the JS script";
 document.body.prepend(heading);
 // to add an element to the bottom of the document, instead of prepend use append
 
