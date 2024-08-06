@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Team Distributor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .result {
+            margin-top: 20px;
+        }
+        .team {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Team Distributor</h1>
+        <form action="/distribute" method="post" id="teamForm">
+            <div class="form-group">
+                <label for="numPlayers">Number of Players</label>
+                <input type="number" id="numPlayers" name="numPlayers" required>
+            </div>
+            <div class="form-group">
+                <label for="numTeams">Number of Teams</label>
+                <input type="number" id="numTeams" name="numTeams" required>
+            </div>
+            <div class="form-group">
+                <label for="players">Players (separated by commas)</label>
+                <textarea id="players" name="players" rows="5" required></textarea>
+            </div>
+            <button type="submit">Distribute Teams</button>
+            <button type="button" id="regenerateBtn" style="display:none;" onclick="regenerateTeams()">Regenerate Teams</button>
+        </form>
+        <div class="result" id="result">
+            <% if (teams && teams.length > 0) { %>
+                <% teams.forEach((team, index) => { %>
+                    <div class="team">
+                        <h3>Team <%= index + 1 %></h3>
+                        <p><%= team.join(', ') %></p>
+                    </div>
+                <% }) %>
+                <script>
+                    document.getElementById('regenerateBtn').style.display = 'inline-block';
+                </script>
+            <% } %>
+        </div>
+    </div>
+
+    <script>
+        function regenerateTeams() {
+            document.getElementById('teamForm').submit();
+        }
+    </script>
+</body>
+</html>
