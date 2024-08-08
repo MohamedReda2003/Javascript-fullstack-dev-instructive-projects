@@ -1,0 +1,17 @@
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.project {
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .portfolio {
+        grid-template-columns: 1fr;
+    }
+}
