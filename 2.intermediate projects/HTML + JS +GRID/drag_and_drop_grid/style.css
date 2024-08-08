@@ -1,0 +1,11 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 10px;
+}
+
+.item {
+    background-color: #ccc;
+    padding: 20px;
+    text-align: center;
+}
