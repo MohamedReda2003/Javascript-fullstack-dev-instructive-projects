@@ -1,0 +1,31 @@
+<%- include("partials/header.ejs") %>
+<hr />
+<hr />
+<hr />
+<div class="container">
+<% if (!name2) { %>
+    <h1>
+        Hello <%= name1 %>, How are you doing today?
+    </h1>
+    
+<% } else { %>
+    <hr />
+    <h1>
+        Hello <%= name2 %>, How are you doing today?
+    </h1>
+    <hr />
+<% } %>
+</div>
+<hr />
+<hr />
+<hr />
+<form action="/" method="POST">
+    <div class="form-group">
+        <label for="inputString">Enter our name please:</label>
+        <input type="text" id="inputString" name="inputString"  />
+    </div>
+    <button type="submit">Submit</button>
+</form>
+
+
+<%- include("partials/footer.ejs") %>
