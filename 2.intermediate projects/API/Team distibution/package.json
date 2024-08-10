@@ -1,5 +1,5 @@
 {
-  "name": "6.1-blog-api-project",
+  "name": "team-distibution",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,8 +13,7 @@
   "dependencies": {
     "axios": "^1.4.0",
     "body-parser": "^1.20.2",
-    "ejs": "^3.1.10",
-    "express": "^4.18.2",
-    "nodemon": "^3.1.4"
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
   }
 }
