@@ -1,8 +1,5 @@
 import express from 'express';
 import bodyParser from 'body-parser';
-//import { name } from 'ejs';
-
-
 
 const app = express();
 const port = 5000;
