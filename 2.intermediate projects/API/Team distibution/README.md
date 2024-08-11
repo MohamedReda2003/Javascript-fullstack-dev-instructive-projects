@@ -27,11 +27,11 @@ The Team Distributor App is a web application built using Express.js. It allows 
 npm i express body-parser axios ejs
 ```
 2. ####  To run the App, you must open two terminals:
-a. the first terminal will be responsible for the server side, so we run the following command:
+a. the first terminal will be responsible for the server side, responsible for the API requests, so we run the following command:
 ```
 nodemon server.js
 ```
-b. the second terminal si where we will run the API file, and we run the command:
+b. In the second terminal we run the second file having the port where our API responds, and we run the command:
 ```
 nodemon index.js
 ```
