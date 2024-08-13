@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background: linear-gradient(-45deg, <%= color1 %>, <%= color2 %>, <%= color3 %>, <%= color4 %>);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+      height: 100vh;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    h1 {
+      font-size: 3.5rem;
+    }
+
+/*    input {
+      appearance: none;
+      -webkit-appearance: none;
+      border: 0;
+      font-size: 0.9rem;
+      background: #888;
+      padding: 1rem;
+      color: white;
+      cursor: pointer;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+      animation: gradient 15s ease infinite;
+    }*/
+  </style>
+</head>
+
+<body>
+  <main>
