@@ -42,11 +42,10 @@ npm i nodemon -D
 
 
 ### 3. Set up the client folder:
-Now navigate to the client folder, and run the following command:
+Now navigate to the client folder, and run the following command in order to install all the dependencies:
 ```
-npx create-react-app .
+npm install
 ```
-after running the command and accessing the folder, go back to the folder you downloaded `client.0` and copy all the files and folders in it, then paste them inside the `client` folder.
 
 ![package.json Screenshot after changes](https://github.com/MohamedReda2003/Javascript-fullstack-dev-instructive-projects/assets/61638355/908024fd-53d7-46cc-a0c0-8dca990f370f)
 *Try keeping the same port between the server.js and this package.json proxy
