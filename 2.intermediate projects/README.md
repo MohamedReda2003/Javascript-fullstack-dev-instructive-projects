@@ -46,7 +46,7 @@ Now navigate to the client folder, and run the following command in order to ins
 ```
 npm install
 ```
-
+and inside the `package.json` in the `client` folder add the following:
 ![package.json Screenshot after changes](https://github.com/MohamedReda2003/Javascript-fullstack-dev-instructive-projects/assets/61638355/908024fd-53d7-46cc-a0c0-8dca990f370f)
 *Try keeping the same port between the server.js and this package.json proxy
 
