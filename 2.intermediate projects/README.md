@@ -30,7 +30,7 @@ Here we will see how to set up the project folder so that you can run it on your
 (The following commands are for Windows users, you might find some minor changes in other systems).
 
 ### 1. Set up the project folders:
-I advice you to rename the client folder to `client.0` and create a new folder named `client`
+As you see, I have already organized the files into 2 folders: `server` and `client`
 
 ### 2. Set up the server:
 Open your terminal, navigate to the server folder we have created recently, and then run the following commands:
