@@ -1,4 +1,3 @@
-
 # Instructive projects about Javascript full-stack development
 This repository contains a collection of twelve beginner and intermediate-level web development projects. These projects are designed to help developers practice and enhance their skills in various web development technologies and concepts, including:
 
