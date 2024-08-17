@@ -1,5 +1,5 @@
 # Task Scheduler App
-
+![PostegreSQL logo](https://github.com/user-attachments/assets/6d240c24-7267-4861-b42c-e87b550c976a)
 A simple task scheduler API built with Node.js and Express, connected to a PostgreSQL database. This application allows users to register, log in, and manage their tasks. The project is designed with security in mind, ensuring that only authenticated users can manage their tasks.
 
 ## Features
