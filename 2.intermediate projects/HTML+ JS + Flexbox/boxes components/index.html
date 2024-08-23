@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Interactive Flexbox Demo</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1 id="mainTitle" class="main-title">Interactive Flexbox Demo</h1>
+        </header>
+        <nav class="controls">
+            <button id="addBoxBtn">Add Box</button>
+            <button id="removeBoxBtn">Remove Box</button>
+            <select id="flexDirectionSelect">
+                <option value="row">Row</option>
+                <option value="column">Column</option>
+                <option value="row-reverse">Row Reverse</option>
+                <option value="column-reverse">Column Reverse</option>
+            </select>
+            <input type="color" id="containerColorPicker" value="#009900">
+            <label for="containerColorPicker">Container Color</label>
+        </nav>
+        <main>
+            <section id="flexContainer" class="flex-container">
+            </section>
+        </main>
+        <footer>
+            <p>Click on a box to edit its content</p>
+        </footer>
+        <div id="editModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Edit Box Content</h2>
+                <input type="text" id="boxContentInput">
+                <button id="saveContentBtn">Save</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
