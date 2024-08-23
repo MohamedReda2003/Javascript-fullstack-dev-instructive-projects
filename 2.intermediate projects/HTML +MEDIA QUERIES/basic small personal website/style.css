@@ -1,0 +1,159 @@
+:root {
+  --primary-bg: #f0f0f0;
+  --secondary-bg: #ffffff;
+  --text-color: #333333;
+  --header-bg: dodgerblue;
+  --aside-bg: palevioletred;
+  --footer-bg: darkslateblue;
+}
+
+.dark-theme {
+  --primary-bg: #333333;
+  --secondary-bg: #444444;
+  --text-color: #f0f0f0;
+  --header-bg: #1e90ff;
+  --aside-bg: #db7093;
+  --footer-bg: #483d8b;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  background-color: var(--primary-bg);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+header {
+  background: var(--header-bg);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#siteTitle {
+  font-size: 24px;
+  color: white;
+  margin: 0;
+}
+
+#toggleTheme {
+  padding: 8px 16px;
+  background-color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex: 1;
+}
+
+aside {
+  width: 250px;
+  flex-shrink: 0;
+  background: var(--aside-bg);
+  padding: 20px;
+}
+
+#navList {
+  padding: 0;
+}
+
+.nav-link {
+  font-size: 18px;
+  list-style-type: none;
+  margin-bottom: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+#addNavItem {
+  margin-top: 20px;
+  padding: 8px 16px;
+  background-color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.section {
+  flex: 1 1 300px;
+  padding: 16px;
+  font-size: 18px;
+  background: var(--secondary-bg);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  cursor: move;
+}
+
+footer {
+  background: var(--footer-bg);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: var(--secondary-bg);
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 500px;
+}
+
+#sectionContent {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#saveSectionBtn, #closeModalBtn {
+  padding: 8px 16px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  main {
+    flex-direction: column;
+  }
+  
+  aside {
+    width: auto;
+  }
+  
+  #navList {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+  
+  .content {
+    flex-direction: column;
+  }
+}

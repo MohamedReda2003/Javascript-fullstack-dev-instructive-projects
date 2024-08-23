@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Responsive Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="siteTitle">My small Site</h1>
+        <button id="toggleTheme">Toggle Theme</button>
+    </header>
+    <main>
+        <aside>
+            <nav>
+                <ul id="navList">
+                    <li><a href="#" class="nav-link">Home</a></li>
+                    <li><a href="#" class="nav-link">About</a></li>
+                    <li><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="addNavItem">Add Nav Item</button>
+        </aside>
+        <div class="content" id="contentArea">
+        </div>
+    </main>
+    <footer>
+        <p>Footer content goes here!</p>
+        <p>Current viewport width: <span id="viewportWidth"></span>px</p>
+    </footer>
+    <div id="addSectionModal" class="modal">
+        <div class="modal-content">
+            <h2>Add New Section</h2>
+            <textarea id="sectionContent" rows="4" placeholder="Enter section content..."></textarea>
+            <button id="saveSectionBtn">Add Section</button>
+            <button id="closeModalBtn">Cancel</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
