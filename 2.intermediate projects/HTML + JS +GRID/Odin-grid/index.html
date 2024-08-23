@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Odin Grid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Odin Grid</h1>
+        <div class="controls">
+            <button id="add-odin">Add Odin</button>
+            <button id="remove-odin">Remove Odin</button>
+            <input type="color" id="bg-color" value="#87CEEB">
+            <label for="bg-color">Background Color</label>
+        </div>
+    </header>
+    <main>
+        <div class="grid-container" id="grid-container"></div>
+    </main>
+    <footer>
+        <p>Click on an Odin to view details</p>
+    </footer>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <img id="modal-image" src="" alt="Odin">
+            <p id="modal-description"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
