@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.controls {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+button, select {
+    margin: 0 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tile {
+    height: 200px;
+    flex-grow: 1;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.tile:hover {
+    transform: scale(1.05);
+}
+
+.tile-1 { background-color: #1abc9c; }
+.tile-2 { background-color: #3498db; }
+.tile-3 { background-color: #9b59b6; }
+.tile-4 { background-color: #34495e; }
+
+#infoPanel {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+@media screen and (min-width: 768px) {
+    .tile {
+        flex-basis: calc(50% - 5px);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .tile {
+        flex-basis: calc(25% - 7.5px);
+    }
+}
+
+.container.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}

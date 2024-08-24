@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Responsive Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">Navigation menu</a>
+        <div class="nav-links">
+            <a href="#" class="nav-item active">Home</a>
+            <a href="#" class="nav-item">About</a>
+            <a href="#" class="nav-item">Contact</a>
+        </div>
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+    <main>
+        <h1>Welcome to our website!</h1>
+        <p>This is a sample content area. The navigation menu above is responsive.</p>
+        <button id="addNavItem">Add Navigation Item</button>
+    </main>
+    <footer>
+        <p>Current viewport width: <span id="viewportWidth"></span>px</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

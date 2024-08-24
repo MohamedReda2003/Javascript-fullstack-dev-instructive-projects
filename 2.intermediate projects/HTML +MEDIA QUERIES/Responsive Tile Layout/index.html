@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Responsive Tile Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="controls">
+        <button id="addTile">Add Tile</button>
+        <button id="removeTile">Remove Tile</button>
+        <select id="layoutSelect">
+            <option value="flex">Flex Layout</option>
+            <option value="grid">Grid Layout</option>
+        </select>
+    </div>
+    <div class="container" id="tileContainer">
+        <div class="tile tile-1" data-number="1"></div>
+        <div class="tile tile-2" data-number="2"></div>
+        <div class="tile tile-3" data-number="3"></div>
+        <div class="tile tile-4" data-number="4"></div>
+    </div>
+    <div id="infoPanel">
+        <h3>Tile Information</h3>
+        <p id="tileInfo"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
