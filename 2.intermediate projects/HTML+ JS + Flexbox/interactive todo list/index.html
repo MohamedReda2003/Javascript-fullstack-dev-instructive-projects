@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Advanced Todo List</h1>
+            <button id="themeToggle">Toggle Theme</button>
+        </header>
+        <main>
+            <form id="todoForm">
+                <input type="text" id="todoInput" placeholder="Add a new task" required>
+                <button type="submit">Add Task</button>
+            </form>
+            <div class="lists-container">
+                <div class="list" id="todoList">
+                    <h2>To Do</h2>
+                    <ul></ul>
+                </div>
+                <div class="list" id="inProgressList">
+                    <h2>In Progress</h2>
+                    <ul></ul>
+                </div>
+                <div class="list" id="doneList">
+                    <h2>Done</h2>
+                    <ul></ul>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
