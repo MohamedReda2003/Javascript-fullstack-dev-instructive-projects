@@ -3,11 +3,13 @@
 1. First you have to open your terminal and navigate to the `server.js` path. 
 2. Run the following commands:
 ```
-npm init -y
-npm i express
-npm i nodemon -D
+npm install
 ```
-3. Now you can simply run the code: 
+3. Now you can run the code: 
 ```
 nodemon server.js
+```
+or with the command:
+```
+npm start
 ```
