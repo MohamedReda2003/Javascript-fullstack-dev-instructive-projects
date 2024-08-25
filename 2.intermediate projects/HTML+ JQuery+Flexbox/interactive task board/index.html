@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Task Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive Task Board</h1>
+        <div class="controls">
+            <input type="text" id="taskInput" placeholder="Enter a new task">
+            <button id="addTask">Add Task</button>
+            <select id="filterTasks">
+                <option value="all">All Tasks</option>
+                <option value="todo">To Do</option>
+                <option value="inprogress">In Progress</option>
+                <option value="done">Done</option>
+            </select>
+        </div>
+        <div class="board">
+            <div class="column" id="todo">
+                <h2>To Do</h2>
+            </div>
+            <div class="column" id="inprogress">
+                <h2>In Progress</h2>
+            </div>
+            <div class="column" id="done">
+                <h2>Done</h2>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

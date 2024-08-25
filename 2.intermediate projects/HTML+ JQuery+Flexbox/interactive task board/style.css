@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.board {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.column {
+    flex: 1;
+    background-color: #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    min-height: 300px;
+}
+
+.task {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: move;
+}
+
+.task-controls {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+}
+
+.task-controls button {
+    padding: 5px 10px;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.edit-task {
+    background-color: #2196F3;
+}
+
+.delete-task {
+    background-color: #f44336;
+}
+
+@media (max-width: 768px) {
+    .board {
+        flex-direction: column;
+    }
+}
