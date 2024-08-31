@@ -1,0 +1,339 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f8ff;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #006400;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 1.5rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #90ee90;
+}
+
+/* Hero Section */
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/api/placeholder/1200/600');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #32cd32;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #228b22;
+}
+
+/* Biomes Section */
+.biomes {
+    padding: 4rem 2rem;
+    background-color: #fff;
+}
+
+.biome-selector {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.biome-option {
+    flex: 0 1 150px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.biome-option:hover {
+    transform: scale(1.05);
+}
+
+.biome-option img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+}
+
+.biome-info {
+    max-width: 800px;
+    margin: 2rem auto 0;
+    text-align: center;
+}
+
+/* Species Section */
+.species {
+    padding: 4rem 2rem;
+    background-color: #f0f8ff;
+}
+
+.species-carousel {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+    overflow-x: auto;
+    padding: 1rem 0;
+}
+
+.species-card {
+    flex: 0 0 200px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.species-card:hover {
+    transform: translateY(-10px);
+}
+
+.species-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+}
+
+.species-info {
+    max-width: 800px;
+    margin: 2rem auto 0;
+    text-align: center;
+}
+
+/* Challenges Section */
+.challenges {
+    padding: 4rem 2rem;
+    background-color: #fff;
+}
+
+.challenge-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.challenge-card {
+    flex: 0 1 300px;
+    background-color: #f0f8ff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.challenge-card:hover {
+    transform: translateY(-10px);
+}
+
+.challenge-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #006400;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.challenge-link:hover {
+    background-color: #004d00;
+}
+
+/* Contribute Section */
+.contribute {
+    padding: 4rem 2rem;
+    background-color: #f0f8ff;
+}
+
+.contribution-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.contribute-card {
+    flex: 0 1 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.contribute-card:hover {
+    transform: translateY(-10px);
+}
+
+.contribute-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #32cd32;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contribute-link:hover {
+    background-color: #228b22;
+}
+
+/* Footer */
+footer {
+    background-color: #006400;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        margin-top: 1rem;
+    }
+
+    .nav-links li {
+        margin: 0.5rem 0;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .biome-selector, .species-carousel, .challenge-grid, .contribution-options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .species-carousel {
+        overflow-x: visible;
+    }
+}
+
+/* Advanced CSS Features */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.hero, .biomes, .species, .challenges, .contribute {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.biome-option, .species-card, .challenge-card, .contribute-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.biome-option::after, .species-card::after, .challenge-card::after, .contribute-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.biome-option:hover::after, .species-card:hover::after, .challenge-card:hover::after, .contribute-card:hover::after {
+    transform: translateX(0);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f0f8ff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #006400;
+    border-radius: 5px;
+}
+
+::-webkit-scroll
