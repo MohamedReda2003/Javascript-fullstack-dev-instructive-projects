@@ -2,6 +2,9 @@
 var person = {firstName:"Saad", lastName:"Said", age:50, eyeColor:"black",nationality:"Egyptian"};
 text = "";
 for (let x in person) {
+    //1. text = "Saad, "
+    //2. text = "Saad,  Said"
+    //...
     text += person[x] + ", ";
 };
 console.log(text);
