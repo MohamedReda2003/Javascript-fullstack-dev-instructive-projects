@@ -26,8 +26,28 @@ const getTasksByUserId = async (userId) => {
   return result.rows;
 };
 
+const updateTaskById = async (taskId, { title, description, due_date }) => {
+  try {
+    const result = await pool.query(
+      `UPDATE tasks SET title = $1, description = $2, due_date = $3 WHERE id = $4 RETURNING *`,
+      [title, description, due_date, taskId]
+    );
+    return result.rows[0];
+  } catch (error) {
+    console.error('Error updating task in DB:', error);
+    throw error;
+  }
+};
+
+const deleteTaskById = async (taskId) => {
+  const result = await pool.query('DELETE FROM tasks WHERE id = $1 RETURNING *', [taskId]);
+  return result.rows[0];
+};
+
 module.exports = {
   createTaskTable,
   createTask,
   getTasksByUserId,
+  updateTaskById,
+  deleteTaskById
 };
