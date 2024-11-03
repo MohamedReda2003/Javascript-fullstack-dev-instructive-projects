@@ -18,6 +18,23 @@ const About = () => {
         <p>
           Hi, I'm {name}. I am a [Your Profession] with experience in [Your Skills]. 
           I am passionate about [Your Passion]. 
+          Hi, I'm {name}. I am a [Your Profession] with experience in [Your Skills]. 
+          I am passionate about [Your Passion]. 
+          Hi, I'm {name}. I am a [Your Profession] with experience in [Your Skills]. 
+          I am passionate about [Your Passion]. 
+          Hi, I'm {name}. I am a [Your Profession] with experience in [Your Skills]. 
+          I am passionate about [Your Passion]. 
+          Hi, I'm {name}. I am a [Your Profession] with experience in [Your Skills]. 
+          I am passionate about [Your Passion]. 
+          Hi, I'm {name}. I am a [Your Profession] with experience in [Your Skills]. 
+          I am passionate about [Your Passion]. 
+          Hi, I'm {name}. I am a [Your Profession] with experience in [Your Skills]. 
+          I am passionate about [Your Passion]. 
+          Hi, I'm {name}. I am a [Your Profession] with experience in [Your Skills]. 
+          I am passionate about [Your Passion]. 
+          Hi, I'm {name}. I am a [Your Profession] with experience in [Your Skills]. 
+          I am passionate about [Your Passion]. Hi, I'm {name}. I am a [Your Profession] with experience in [Your Skills]. 
+          I am passionate about [Your Passion]. 
         </p>
       </main>
     </div>
